@@ -1,0 +1,16 @@
+<template name="publicLayout">
+  <!--[if lt IE 9]>
+    <p class="browser-warning"><strong><i class="icon-exclamation-sign"></i> Warning</strong> - You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to properly view this website.</p>
+  <![endif]-->
+	<div class="wrapper">
+  		{{> mainheader}}
+  		{{> siderbar}}
+
+  			<div class="content-wrapper">
+    			{{> yield}}
+    		</div>
+
+  		{{> footer}}
+      {{> controlsidebar}}
+ 	</div>
+</template>
